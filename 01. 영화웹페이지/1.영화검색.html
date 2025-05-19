@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOOKFLIX</title>
+ <!-- Bootstrap 5 CDN (CSS) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+ <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+ <!-- GSAP CDN -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<!-- Swiper CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script>
+<link rel="stylesheet" href="1.영화검색.css"/>
+</head>
+<body>
+<div class="container">
+   <div class="blur">
+      <!-- 네브 -->
+            <nav class="navbar navbar-expand-lg bg mt-3">
+            <div class="container-fluid">
+               <div class="brandLogo">
+               <a class="navbar-brand" href="#">SOOK-FLIX</a>
+               </div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="d-flex">
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mb-2 mb-lg-0 mr-3 backgroundColor-white">
+                  <li class="nav-item">
+                     <span class="nav-link" aria-current="page" href="#">신작</span>
+                  </li>
+                  <li class="nav-item">
+                     <span class="nav-link" href="#">인기</span>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <span class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        장르
+                     </span>
+                     <ul class="dropdown-menu">
+                        <li><span class="dropdown-item" href="#">액션</span></li>
+                        <li><span class="dropdown-item" href="#">로맨스</span></li>
+                        <li><span class="dropdown-item" href="#">스릴러</span></li>
+                     </ul>
+                  </li>
+                  </ul>
+                  <div class="serch-bar">
+                  <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                     <button class="btn btn-outline-success" type="submit">search</button>
+                     </form>
+                  </div>
+               </div>
+               </div>
+            </div>
+            </nav>
+
+     
+
+   <div class="texts">
+      <!--메인 홍보 텍스트 -->
+      <span class="mainText">영화 시리즈 가이드</span>
+
+      <!-- 서브 텍스트 (신작 찾아보세요) -->
+      <span class="serveText">신작, 인기작, 개봉예정작을 바로 볼수 있는곳, SOOK-FLIX와 함께하세요</span>
+
+      <!-- 클릭 버튼 2개 -->
+   </div>
+  </div>
+ </div>
+</body>
+</html>
