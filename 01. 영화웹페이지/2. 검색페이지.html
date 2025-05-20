@@ -52,8 +52,8 @@
               </ul> -->
               <div class="serch-bar">
               <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-outline-success" type="submit">search</button>
+                <input class="form-control me-2" id="search-input" type="text" placeholder="Search" aria-label="Search"/>
+                <button onclick="search()" class="btn btn-outline-success" type="submit">search</button>
                 </form>
               </div>
           </div>
@@ -63,12 +63,12 @@
       </div>
 
 
-      
+
       <!-- 콘텐츠1 -->
    <div class="contents">
                   <!-- 핫콘텐츠 -->
-                  <div class="content-hot">
-                    <span class="hot-text">로맨틱 에피소드</span>
+                  <div class="content hot">
+                    <div class="hot-text">지금 핫한 콘텐츠</div>
                     <div class="hot-card">
                      <div class="card">
                        <img src="..." class="card-img-top" alt="...">
@@ -83,22 +83,18 @@
                     </div>
                   <!-- 로맨틱 에피 -->
            <div class="content Romantic">
-           <span class="romantic-text">로맨틱 에피소드</span>
-           <div class="romantic-card">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-            </div>
-            <div class="card">
-              <img src="..." class="card-img-top" alt="...">
-            </div>
-          </div>
+           <div class="romantic-text">로맨틱 에피소드</div>
+           <ul class = "thriller-group" id="Romantic">
+            
+           </ul>
            </div>
+
              <!-- 스릴러 콘텐츠 -->
            <div class="content Thriller">
-           <span class="hot-text">여름 스릴러</span>
+           <div class="thriller-text">여름 스릴러</div>
+           <ul class = "thriller-group" id="Thriller">
+            
+           </ul>
            
            </div>
     </div>

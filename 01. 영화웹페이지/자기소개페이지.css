@@ -1,0 +1,36 @@
+body {
+  min-height: 100vh;
+  max-width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #183B59;
+}
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+      width: 100%;
+      height: 100%;
+}
+
+
+
+/* 헤더 */
+.container-fluid {
+
+  display:inline-flex ;
+  align-content: center;
+  
+}
+
+
+@font-face {
+  font-family: '양진체';
+  src: url('https://fastly.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.navbar-brand {
+  font-family: 양진체;
+  font-size: 80px;
+  margin: 20px 30px;
+}

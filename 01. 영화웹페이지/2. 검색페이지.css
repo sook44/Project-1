@@ -105,24 +105,22 @@
       margin: 20px;
      }
 
-
       /*콘텐츠 카드*/
       .card {
         margin: 10px 30px;
         border-radius: 30px;
         background-color: white;
+        height: 500px;
+        width: 500px;
+
       }
       .hot-card {
-        width: 500px;
-        height: 500px;
-        border-radius: 20px;
         font-size: 50px;
         margin: 100px -10px;
+
+        display:inline-flex ;
       }
       .romantic-card {
-        width: 500px;
-        height: 500px;
-        border-radius: 20px;
         font-size: 50px;
         margin: 100px -10px;
       }
