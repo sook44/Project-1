@@ -1,0 +1,138 @@
+    /* 바디 컬러 */
+    body {
+      min-height: 100vh;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(12, 10, 10, 0.925);
+    }  
+    .container {
+      min-height: 100vh;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+
+
+
+
+
+    /*네브바*/
+
+          /*메인로고 폰트*/
+          .brandLogo:hover {
+            color:white;
+          }
+          @font-face {
+            font-family: 'Cafe24Behappy';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Behappy.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+          }
+          .navbar-brand {
+                    font-family: 'Cafe24Behappy';
+                    font-style: italic;
+                    color: #F2D95C;
+                    font-size: 100px;
+                    text-shadow:0 0 10px black;
+                    letter-spacing : 2px;
+                    font-style: italic;
+                    margin: 0 50px;
+          }
+
+          .navbar-brand:hover {
+            color: white;
+            text-shadow: 0 0 15px;
+          }
+          /* 상단 네브바 li 간격
+          .nav-item {
+            margin-right: 30px;
+            font-size: 25px;
+            font-weight: 500;
+            text-align: center;
+          }
+          .nav-link:hover {
+            color: white;
+            text-shadow: 0 0 15px;
+          } */
+
+
+          /* .nav-link-active {
+            color: white;
+          }
+
+          .nav-link {
+            color: white;
+          } */
+
+
+          /*네브바 버튼*/
+          .me-2 {
+            width: 500px;
+            height: 80px;
+            border-radius: 15px;
+          }
+          .btn-outline-success {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            background-color: green;
+            color: white;
+            
+          }
+
+
+
+
+
+  /*콘텐츠 텍스트*/
+     @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+      }
+
+      .contents {
+       margin: 50px 50px;
+      }
+     .content {
+      font-family: retendard-Regular;
+      font-size: 70px;
+      font-weight: bold;
+      color: white;
+      margin: 20px;
+     }
+
+
+      /*콘텐츠 카드*/
+      .card {
+        margin: 10px 30px;
+        border-radius: 30px;
+        background-color: white;
+      }
+      .hot-card {
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        font-size: 50px;
+        margin: 100px -10px;
+      }
+      .romantic-card {
+        width: 500px;
+        height: 500px;
+        border-radius: 20px;
+        font-size: 50px;
+        margin: 100px -10px;
+      }
+
+      /*콘텐츠 버튼*/
+      .hot-button {
+        width: 250px;
+        height: 80px;
+        border-radius: 20px;
+        font-size: 50px;
+        margin: 100px -10px;
+      }
+

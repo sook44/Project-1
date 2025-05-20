@@ -1,96 +1,122 @@
 /*메인 bg*/
 
-.container {
- min-height: 100vh;
- max-width: 100%;
-  width: 100%;
-  height: 100%;
-  /* background: pink; */
-  background-image: url(https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-}
+    .container {
+    min-height: 100vh;
+    max-width: 100%;
+      width: 100%;
+      height: 100%;
+      /* background: pink; */
+      background-image: url(https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    }
 
-.blur {
- content: "";
- left: 0;
- position: absolute;
- min-height: 100vh;
- max-width: 100%;
-  width: 100%;
-  height: 100%;
-    backdrop-filter: blur(10px);
-    background-size: cover;
-    
-}
+    .blur {
+    content: "";
+    left: 0;
+    position: absolute;
+    min-height: 100vh;
+    max-width: 100%;
+      width: 100%;
+      height: 100%;
+        backdrop-filter: blur(10px);
+        background-size: cover;
+        
+    }
 
+
+
+
+/*네브바*/
 
 /*메인로고 폰트*/
-@font-face {
-    font-family: 'OG_Renaissance_Secret-Rg';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/OG_Renaissance_Secret-Rg.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
+    .brandLogo:hover {
+      color:white;
+    }
+    @font-face {
+      font-family: 'Cafe24Behappy';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/Cafe24Behappy.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+  }
+    .navbar-brand {
+              font-family: 'Cafe24Behappy';
+              font-style: italic;
+              color: #F2D95C;
+              font-size: 100px;
+              text-shadow:0 0 10px black;
+              letter-spacing : 2px;
+              font-style: italic;
+              margin: 0 50px;
+    }
 
-        .navbar-brand {
-          font-family: 'HakgyoansimByeolbichhaneulTTF-B';
-          font-style: italic;
-          color: #F2D95C;
-          font-weight: bold;
-          font-size: 50px;
-          text-shadow:0 0 5px black;
-          letter-spacing : 2px;
-          font-style: italic;
-
-        }
-
-
+    .navbar-brand:hover {
+      color: white;
+      text-shadow: 0 0 15px;
+    }
 /*상단 네브바 li 간격*/
-.nav-item {
-  margin-right: 30px;
-}
+    .nav-item {
+      margin-right: 30px;
+      font-size: 27px;
+      font-weight: 500;
+    }
+    .nav-link:hover {
+      color: white;
+      text-shadow: 0 0 15px;
+    }
+    
+    
 
-.nav-link-active {
-  color: white;
-}
+    .nav-link-active {
+      color: white;
+    }
 
-.nav-link {
-  color: white;
-}
-
-
+    .nav-link {
+      color: white;
+    }
+/*네브바 버튼*/
+    .me-2 {
+      width: 300px;
+      height: 80px;
+      border-radius: 15px;
+    }
+    .btn-outline-success {
+      width: 80px;
+      height: 80px;
+      border-radius: 15px;
+      background-color: green;
+      color: white;
+      
+    }
 
 
 /*메인 홍보 텍스트*/
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+    @font-face {
+        font-family: 'Pretendard-Regular';
+        src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .texts {
+        height: 60%;
+        align-content: end;
+    }
+
+    .mainText {
+            font-family: 'Pretendard-Regular';
+            font-weight: bold;
+            font-size: 200px;
+            color:white;
+            text-shadow: 0 0 10px black;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            
+        
+          }
 
 
-        .texts {
-          height: 60%;
-      align-content: end;
-        }
 
-
-
-
-
-        .mainText {
-          font-family: 'Pretendard-Regular';
-          font-weight: bold;
-          font-size: 200px;
-          color:white;
-          text-shadow: 0 0 10px black;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          
-      
-        }
-
+/* 서브 텍스트*/        
         .serveText {
           font-family: 'Pretendard-Regular';
           font-weight: bold;
@@ -100,7 +126,52 @@
           display: flex;
           justify-content: center;
           align-items: center;
+        
         }
 
 
-        
+/* 버튼 */ 
+      .btns {
+        margin: 100px 100px;
+        display: flex;
+        justify-content: center; /* 가로 */
+        align-items: center; /* 세로 */
+      }
+
+
+
+      @import url('https://fastly.jsdelivr.net/gh/wanteddev/wanted-sans@v1.0.1/packages/wanted-sans/fonts/webfonts/variable/split/WantedSansVariable.min.css');
+
+      .custom-btn {
+        width: 300px;
+        height: 100px;
+        border-radius: 20px;
+        font-family: 'Wanted Sans';
+        font-size: 25px;
+        font-weight: 400;
+        background-color: transparent;
+        box-shadow: 0 0 15px;
+        outline: none;
+        margin: 20px 40px;
+        text-align: center;
+      }     
+
+      .big {
+        background-color: #F2D95C;
+        border: none;
+        z-index: 1;
+      }
+      .big:hover {
+        color: #3a3a3a;
+      }
+
+
+      .small {
+        background-color: #b1b1b1;
+        border: none;
+        z-index: 1;
+      }
+      .small:hover {
+        color: #3a3a3a;
+      }
+
