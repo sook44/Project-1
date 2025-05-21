@@ -3479,63 +3479,107 @@ const genres =  [
 
 
 
-// 배열
-
-// const movieListElelment = document.getElementById("Thriller");
-// movieListElelment.innerHTML = "";
-
-// .filter(movie => movie.genre_ids.includes(thrillerGenreId) && movie.backdrop_path)
-// .map(movie => makeImageUrl(movie.backdrop_path));
-
-// console.log(thrillerImages);
-
-
-
-// 이미지 찾기
-const makeImageUrl = ($path) => `https://image.tmdb.org/t/p/w440_and_h660_face ${path}`;
 
 
 
 
 
+// const movieListElement = document.getElementsByClassName("hot-card");
+// movieListElement.innerHTML = "";
 
+// const HotCardList = (filtered) => {
+//   const hotArea = document.getElementsByClassName("hot-card");
+//   hotArea.innerHTML="";
 
+//   filtered.forEach((filtered) => {
+//     const listItem = document.createElement("div");
+//     listItem.id = "hotCard";
+//     listItem.className = "hC";
 
-
-
-
-// function search() {
-//   const searchInput = document.getElementById('search-input').value;
-//   // 서버로 검색어를 전송하고 결과 받기 (예: fetch API 사용)
-//   fetch('/search?q=' + searchInput)
-//     .then(response => response.json())
-//     .then(data => {
-//       displayResults(data);
-//     })
-//     .catch(error => console.error('검색 오류:', error));
-// }
-
-// function displayResults(results) {
-//   const searchResultsDiv = document.getElementById('search-results');
-//   searchResultsDiv.innerHTML = ''; // 기존 결과 초기화
-
-//   results.forEach(result => {
-//     const resultDiv = document.createElement('div');
-//     resultDiv.innerHTML = `
-//       <h3>${result.title}</h3>
-//       <p>${result.content}</p>
-//     `;
-//     searchResultsDiv.appendChild(resultDiv);
-//   });
+//     for (let U = 0; U <200; U++) {
+//       console.log ("https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[U].poster_path )
+//     };
+//   }
+// )
+// filtered.img
+// hotArea.HotCardList.add(filtered)
+// hotArea.appendChild(filtered)
 // }
 
 
 
 
+//1. 지금핫한 콘텐츠
+function HotCardList2 () {
+ const hotArea = document.getElementById("test");
+
+
+
+  hotArea.innerHTML="";
+  
+  
+  for (let U = 0; U <200; U++) {
+        const listItem = document.createElement("div");
+        const listImageItem = document.createElement("img");
+      
+        if (movieList.results[U].popularity > 300) 
+    
+     listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[U].poster_path;
+        // console.log ( hotArea)
+        listItem.appendChild(listImageItem)
+        hotArea.appendChild(listItem);
+ 
+    listItem.style="margin:30px; display:inline-flex; justify-content: space-between; border-radius: 10px"
+    
+
+    };
+}
+
+
+
+
+HotCardList2()
 
 
 
 
 
 
-// 검색 기능
+
+
+
+
+
+
+//2. 로맨스 콘텐츠
+function RomanticList () {
+ const RomArea = document.getElementById("Romantic");
+
+
+
+  RomArea.innerHTML="";
+  
+  for (let R = 0; R <200; R++) { 
+        const listItem = document.createElement("div");
+        const listImageItem = document.createElement("img");
+        
+
+        // if (movieList.results[R].genre_ids.10749]) 
+        console.log (movieList.results[R].genre_ids[0]);
+        
+    
+     listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[R].poster_path;
+        // console.log ( hotArea)
+        listItem.appendChild(listImageItem);
+        RomArea.appendChild(listItem);
+ 
+    listItem.style="margin:30px; display:inline-flex; justify-content: space-between; border-radius: 10px"
+    
+
+    };
+}
+
+
+
+
+RomanticList()
