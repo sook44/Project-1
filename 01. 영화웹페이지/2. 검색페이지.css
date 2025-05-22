@@ -45,38 +45,18 @@
             color: white;
             text-shadow: 0 0 15px;
           }
-          /* 상단 네브바 li 간격
-          .nav-item {
-            margin-right: 30px;
-            font-size: 25px;
-            font-weight: 500;
-            text-align: center;
-          }
-          .nav-link:hover {
-            color: white;
-            text-shadow: 0 0 15px;
-          } */
-
-
-          /* .nav-link-active {
-            color: white;
-          }
-
-          .nav-link {
-            color: white;
-          } */
-
+          
 
           /*네브바 버튼*/
           .me-2 {
-            width: 500px;
-            height: 80px;
-            border-radius: 15px;
+            width: 90em;
+            height: 8em;
+            border-radius: 30px;
           }
           .btn-outline-success {
-            width: 80px;
-            height: 80px;
-            border-radius: 15px;
+            width: 8em;
+            height: 8em;
+            border-radius: 30px;
             background-color: green;
             color: white;
             
@@ -99,38 +79,10 @@
       }
      .content {
       font-family: retendard-Regular;
-      font-size: 70px;
+      font-size: 100px;
       font-weight: bold;
       color: white;
-      margin: 20px;
+      margin: 200px;
      }
 
-      /*콘텐츠 카드*/
-      .card {
-        margin: 10px 30px;
-        border-radius: 30px;
-        background-color: white;
-        height: 500px;
-        width: 500px;
-
-      }
-      .hot-card {
-        font-size: 50px;
-        margin: 100px -10px;
-
-        display:inline-flex ;
-      }
-      .romantic-card {
-        font-size: 50px;
-        margin: 100px -10px;
-      }
-
-      /*콘텐츠 버튼*/
-      .hot-button {
-        width: 250px;
-        height: 80px;
-        border-radius: 20px;
-        font-size: 50px;
-        margin: 100px -10px;
-      }
-
+      

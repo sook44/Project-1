@@ -1,3 +1,5 @@
+
+
 const movieList = {
   page: 1,
   results: [
@@ -3509,77 +3511,274 @@ const genres =  [
 
 
 
+
+
+
+
 //1. 지금핫한 콘텐츠
 function HotCardList2 () {
  const hotArea = document.getElementById("test");
 
-
-
   hotArea.innerHTML="";
   
-  
   for (let U = 0; U <200; U++) {
+    const movie = movieList.results[U];      
+        if (movieList.results[U].popularity > 300) {
         const listItem = document.createElement("div");
         const listImageItem = document.createElement("img");
-      
-        if (movieList.results[U].popularity > 300) 
-    
-     listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[U].poster_path;
-        // console.log ( hotArea)
+        
+        listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[U].poster_path;
         listItem.appendChild(listImageItem)
         hotArea.appendChild(listItem);
- 
-    listItem.style="margin:30px; display:inline-flex; justify-content: space-between; border-radius: 10px"
-    
+        
 
-    };
-}
+        //style
+        listItem.style="margin:50px; display:inline-flex; justify-content: space-between; border-radius: 10px"    //hot content div style
+        listImageItem.style = "border-radius:10px; width:300px;"                                                  //hot content img style
 
+                                                  
+                                          
+        //gsap effect 
+        listImageItem.addEventListener ('mouseenter',() => {
+          gsap.to(listImageItem, {scale:1.2, duration: 0.4, ease: "power2.inOut"});         
 
+        });   
 
-
-HotCardList2()
-
-
-
-
-
-
-
-
+        listImageItem.addEventListener ('mouseleave', () => {
+            gsap.to(listImageItem, {scale:1, duration: 0.4, ease: "power2.inOut"});
+          })
 
 
+       // 클릭 시 상세 페이지 보기
+        listImageItem.addEventListener('click', () => {
+          showDetail(movie);
+        });
 
 
-//2. 로맨스 콘텐츠
-function RomanticList () {
+
+        };    //end
+        };   
+    }
+
+HotCardList2() //호출
+
+
+
+
+
+
+
+
+
+
+
+
+// 2. 로맨스 콘텐츠
+function RomCardList () {
  const RomArea = document.getElementById("Romantic");
-
-
 
   RomArea.innerHTML="";
   
-  for (let R = 0; R <200; R++) { 
+  for (let R = 0; R <200; R++) {
+    const movie = movieList.results[R];
+       
+        if (movieList.results[R].genre_ids.includes(10749))
+          if (movieList.results[R].popularity > 50) 
+            {
         const listItem = document.createElement("div");
         const listImageItem = document.createElement("img");
         
-
-        // if (movieList.results[R].genre_ids.10749]) 
-        console.log (movieList.results[R].genre_ids[0]);
-        
-    
-     listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[R].poster_path;
-        // console.log ( hotArea)
-        listItem.appendChild(listImageItem);
+        listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[R].poster_path;
+        listItem.appendChild(listImageItem)
         RomArea.appendChild(listItem);
- 
-    listItem.style="margin:30px; display:inline-flex; justify-content: space-between; border-radius: 10px"
-    
+        
 
-    };
+        //style
+        listItem.style="margin:50px; display:inline-flex; justify-content: space-between; border-radius: 10px"    //rom content div style
+        listImageItem.style = "border-radius:10px; width:300px;"                                                  //rom content img style
+
+                                                  
+                                          
+        //gsap effect 
+        listImageItem.addEventListener ('mouseenter',() => {
+          gsap.to(listImageItem, {scale:1.2, duration: 0.4, ease: "power2.inOut"});         
+
+        });   
+
+        listImageItem.addEventListener ('mouseleave', () => {
+            gsap.to(listImageItem, {scale:1, duration: 0.4, ease: "power2.inOut"});
+          })
+
+       // 클릭 시 상세 페이지 보기
+        listImageItem.addEventListener('click', () => {
+          showDetail(movie);
+        });
+
+
+
+        };    //end
+        };   
+        
+    }
+
+RomCardList() //호출
+
+
+
+
+
+
+
+
+
+// 3. 스릴러 콘텐츠
+function ThrillCardList () {
+ const ThrillArea = document.getElementById("Thriller");
+
+  ThrillArea.innerHTML="";
+  
+  for (let T = 0; T <200; T++) {
+    const movie = movieList.results[T];
+       
+        if (movieList.results[T].genre_ids.includes(53))
+          if (movieList.results[T].popularity > 100) 
+            {
+        const listItem = document.createElement("div");
+        const listImageItem = document.createElement("img");
+        
+        listImageItem.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movieList.results[T].poster_path;
+        listItem.appendChild(listImageItem)
+        ThrillArea.appendChild(listItem);
+        
+
+        //style
+        listItem.style="margin:50px; display:inline-flex; justify-content: space-between; border-radius: 10px"    //rom content div style
+        listImageItem.style = "border-radius:10px; width:300px;"                                                  //rom content img style
+
+                                                  
+                                          
+        //gsap effect 
+        listImageItem.addEventListener ('mouseenter',() => {
+          gsap.to(listImageItem, {scale:1.2, duration: 0.4, ease: "power2.inOut"});         
+
+        });   
+
+        listImageItem.addEventListener ('mouseleave', () => {
+            gsap.to(listImageItem, {scale:1, duration: 0.4, ease: "power2.inOut"});
+          })
+
+          // 클릭 시 상세 페이지 보기
+        listImageItem.addEventListener('click', () => {
+          showDetail(movie);
+        });
+
+
+
+        };    //end
+        };   
+        
+    }
+
+ThrillCardList() //호출
+
+
+
+
+
+
+
+
+
+// 영화 리스트를 보여주는 함수 (초기 또는 검색 결과)
+function renderMovieList(movies) {
+  const contents = document.getElementById("contentsId");
+  const searchResultsArea = document.getElementById("searchResults");
+
+  // 영화 목록이 나오면 기존 콘텐츠 숨기기 + 결과 영역 초기화
+  contents.style.display = "none";
+  searchResultsArea.innerHTML = "";
+
 }
 
 
 
+// 검색 함수
+function search(event) {
+  if (event) event.preventDefault();
 
-RomanticList()
+  const keyword = document.getElementById('search-input').value.toLowerCase().trim();
+  const contents = document.getElementById("contentsId");
+  const searchResultsArea = document.getElementById("searchResults");
+
+  // 검색어 없으면 기존 콘텐츠 보이고 결과 초기화
+  if (keyword === "") {
+    contents.style.display = "block";
+    searchResultsArea.innerHTML = "";
+    return;
+  }
+
+  // 검색
+  const filtered = movieList.results.filter(movie =>
+    movie.title.toLowerCase().includes(keyword)
+  );
+
+  renderMovieList();
+}
+
+// 상세페이지 보여주는 함수
+function showDetail(filtered) {
+  if (!movie) return;
+
+
+
+
+
+  // 기존 콘텐츠와 검색 결과 모두 숨기기
+  document.getElementById("contentsId").style.display = "none";
+  const searchResultsArea = document.getElementById("searchResults");
+  searchResultsArea.innerHTML = "";
+
+  // 상세 정보 영역 구성
+  const detailDiv = document.createElement("div");
+  detailDiv.style = "padding: 100px; disply:inline-flex; justify-content:flex-end;";
+
+  const title = document.createElement("div");
+  title.innerText = movie.title;
+  title.style = "color:white; font-size:100px; font-weight: bolder"
+
+  const image = document.createElement("img");
+  image.src = "https://image.tmdb.org/t/p/w440_and_h660_face" + movie.poster_path;
+  image.style = "width:70em; border-radius:5em; display:block; margin:10px;";
+
+  const overview = document.createElement("div");
+  overview.innerText = movie.overview;
+  overview.style = "color: white;font-size: 4em;"
+
+  // 뒤로 가기 버튼
+  const backBtn = document.createElement("button");
+  backBtn.innerText = "뒤로 가기";
+  backBtn.style = 
+  "margin-top:20px; padding:10px 20px;font-size:16px; cursor:pointer; border-radius:15px; background-color:#F2D95C ";
+  backBtn.addEventListener("click", () => {
+    // 상세페이지 닫고 기존 콘텐츠(또는 검색결과) 보이게 하기
+    document.getElementById("searchResults").innerHTML = "";
+    document.getElementById("contentsId").style.display = "block";
+  });
+
+  detailDiv.appendChild(title);
+  detailDiv.appendChild(image);
+  detailDiv.appendChild(overview);
+  detailDiv.appendChild(backBtn);
+
+  searchResultsArea.appendChild(detailDiv);
+}
+
+// 자동 검색 실행 (입력 시)
+document.getElementById("search-input").addEventListener("input", search);
+
+// 초기 로딩 시 기본 콘텐츠 (기본 목록) 보이기
+document.getElementById("contentsId").style.display = "block";
+document.getElementById("searchResults").innerHTML = "";
+
+
+
